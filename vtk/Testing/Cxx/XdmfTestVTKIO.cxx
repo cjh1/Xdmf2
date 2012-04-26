@@ -37,6 +37,10 @@
 #include "vtkTimeSourceExample.h"
 #include "vtkXdmfReader.h"
 
+#ifndef _MSC_VER
+# include <unistd.h>
+#endif
+
 #define NUMTESTS 20
 
 const char testobject[NUMTESTS][40] = {
